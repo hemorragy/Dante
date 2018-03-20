@@ -63,26 +63,6 @@ time astar/solver mazes/1000_imperfect >result
 printf "Tournoi :\n"
 time tournoi/solver mazes/1000_imperfect >result
 read && clear
-printf "10000x10000 Parfaite\n"
-printf "Profondeur :\n"
-time profondeur/solver mazes/10000_perfect >result
-printf "Largeur :\n"
-time largeur/solver mazes/10000_perfect >result
-printf "Astar :\n"
-time astar/solver mazes/10000_perfect >result
-printf "Tournoi :\n"
-time tournoi/solver mazes/10000_perfect >result
-read && clear
-printf "10000x10000 Imparfaite\n"
-printf "Profondeur :\n"
-time profondeur/solver mazes/10000_imperfect >result
-printf "Largeur :\n"
-time largeur/solver mazes/10000_imperfect >result
-printf "Astar :\n"
-time astar/solver mazes/10000_imperfect >result
-printf "Tournoi :\n"
-time tournoi/solver mazes/10000_imperfect >result
-read && clear
 make -C profondeur fclean
 make -C largeur fclean
 make -C astar fclean
